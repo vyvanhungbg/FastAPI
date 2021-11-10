@@ -1,13 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import  sessionmaker
-import config
-
-# SQLALCHAMY_DATABASE_URL = 'sqlite:///./deploy.db'
-from blog.config import Settings
-
-SQLALCHAMY_DATABASE_URL = config.Settings.POSTGRES_DB_URL
-
+SQLALCHAMY_DATABASE_URL = 'sqlite:///./blog.db'
 engine = create_engine(SQLALCHAMY_DATABASE_URL,echo =True)
 
 

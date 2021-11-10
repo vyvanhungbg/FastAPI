@@ -2,7 +2,7 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 
 from .. import models
-from ..database import get_db
+from blog.database import get_db
 
 
 def get_all(db : Session = Depends(get_db)):
