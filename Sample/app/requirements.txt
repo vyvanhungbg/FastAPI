@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-sqlalchemy
-passlib
-bcrypt
-python-jose>=3.0.0
-python-multipart
-Flask-SQLAlchemy

@@ -1,12 +1,8 @@
-import email
-
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
-from jose import JWTError, jwt
 from starlette import status
 
-from app.blog.schemas import TokenData
-from app.blog.token import SECRET_KEY, ALGORITHM, verify_token
+from venv.app.blog import verify_token
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 

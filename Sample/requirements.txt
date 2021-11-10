@@ -6,3 +6,8 @@ bcrypt
 python-jose>=3.0.0
 Flask-SQLAlchemy
 python-multipart
+jinja2
+aiofiles
+psycopg2-binary
+sqlalchemy
+python-dotenv
