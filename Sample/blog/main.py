@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from venv.app.blog import models
-from venv.app.blog import engine
+from blog import models
+from blog.database import engine
 
-from venv.app.blog import blog, authentication
-from venv.app.blog.routers import user
+
+from blog.routers import user, authentication, blog
 
 app = FastAPI()
 
