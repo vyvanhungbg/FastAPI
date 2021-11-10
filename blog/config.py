@@ -9,6 +9,7 @@ class Settings:
     PROJECT_NAME:str = "Job Board"
     PROJECT_VERSION: str = "1.0.0"
 
+    POSTGRES_DB_URL : str = os.getenv("POSTGRES_DB_URL")
     POSTGRES_USER : str = os.getenv("POSTGRES_USER")
     POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
     POSTGRES_SERVER : str = os.getenv("POSTGRES_SERVER","localhost")

@@ -4,10 +4,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from starlette import status
 
-from blog import models, schemas, oauth2
-from blog.database import get_db
+from .. import schemas, models, oauth2
+from ..database import get_db
 from ..repository import blog
-router = APIRouter(prefix= '/blog', tags= ['blogs'])
+router = APIRouter(prefix= '/deploy', tags= ['blogs'])
 
 @router.get('', response_model=List[schemas.ShowBlog])
 def get_all(db : Session = Depends(get_db), get_current_user: schemas.User = Depends(oauth2.get_current_user)):
